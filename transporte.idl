@@ -1,0 +1,9 @@
+module TransporteApp{
+	interface Transporte{
+		void setDestino(in string nombre, in double precio, in long disponible); 
+		long buscarDestinoInArray(in string destino);
+		string verDisponibilidad(in string destino);
+		double getPrecio(in string destino);
+		string hacerReservacion(in string destino);
+	};
+};
